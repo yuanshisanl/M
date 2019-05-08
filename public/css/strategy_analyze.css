@@ -1,0 +1,379 @@
+/*交易书籍样式 */
+/*共有样式*/
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family:'Microsoft Yahei',Arial,sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+/*顶部容器样式*/
+#flex-container{
+    /*弹性布局 宽 高 背景颜色 margin*/
+    display: flex;
+    width:100%;
+    height:50px;
+    background-color: #042A59;
+
+}
+/*顶部左侧容器样式*/
+#flex-container .flex-items1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:15%;
+    height:50px;
+}
+#flex-container .flex-items1 p{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height:40px;
+    margin:1px;
+    padding:1px;
+}
+#flex-container .flex-items1 p>img{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    margin:1px;
+    padding:1px;
+
+}
+
+#flex-container .flex-items1 ul{
+    width:50px;
+    height:45px;
+    margin:1px;
+    padding:1px;
+}
+
+#flex-container .flex-items1 ul>li{
+    list-style: none;
+    width:40px;
+    margin:1px;
+    padding: 1px;
+    color:#00ccff;
+}
+
+/*顶部中间容器样式*/
+#flex-container .flex-items2{
+    display:flex;
+    justify-content: space-around;
+    width:70%;
+    height:50px;
+}
+#flex-container .flex-items2 ul{
+    display:flex;
+    justify-content: space-around;
+    width:80%;
+    height:50px;
+    padding:1px;
+    margin:0 auto;
+}
+#flex-container .flex-items2 ul li{
+    display:flex;
+    align-items: center;
+    width:100px;
+    height:46px;
+    list-style: none;
+    margin:2px;
+    padding:2px;
+}
+
+#flex-container .flex-items2 ul li a{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90px;
+    height:42px;
+    margin:1px;
+    padding:1px;
+    text-decoration: none;
+    font-size: 18px;
+    color:#fff;
+}
+#flex-container .flex-items2 ul li a:hover{
+    color:#00ccff;
+}
+/*顶部右侧容器样式*/
+#flex-container .flex-items3{
+    display:flex;
+    width:15%;
+    height:50px;
+    background-color: green;
+}
+#flex-container .flex-items3 ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;/* 垂直水平居中 配合justify-content*/
+    width:100%;
+    height:50px;
+    padding:2px;
+    margin:0 auto;
+}
+#flex-container .flex-items3 ul li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width:50%;
+    height:40px;
+    padding:2px;
+    margin:0 auto;
+}
+#flex-container .flex-items3 ul li a{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2px;
+    margin:0 auto;
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px;
+}
+
+/* 策略分析主体内容 */
+/* 第一部分：表单填写内容 */
+#stockCalculate{
+    /*弹性布局(垂直) 宽度 高度  上边框 */
+    display:flex;
+    flex-direction:column;
+    width:80%;
+    min-height:500px;
+    margin:10px auto;
+    padding:2px;
+    border-top:2px solid #009689;
+}
+#intrinsicValue{
+    /*块级 宽度 高度，居中，*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:95%;
+    min-height:300px;
+    margin:5px auto;
+    border:1px solid #aaa;
+    border-radius:5px;
+}
+#intrinsicValue .formCalculate>div:first-child{
+    width:70%;
+    height:290px;
+    padding:2px;
+    margin:2px;
+}
+#intrinsicValue .formCalculate{
+    /*弹性布局 宽度 高度 边框 居中*/
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height:290px;
+    margin:2px;
+    padding:2px;
+    border:1px dotted limegreen;
+    border-radius:5px;
+}
+#intrinsicValue .formContent{
+    /* 弹性布局(垂直) 宽度 高度 内外边距 */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:100%;
+    height:280px;
+    margin:2px;
+    padding:2px;
+}
+#intrinsicValue .formContent div{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+#intrinsicValue .formContent div label{
+    display:inline-block;
+    width:80px;
+    font-weight:bold;
+}
+#intrinsicValue .calculateResult{
+    /*弹性布局(垂直)宽度 高度*/
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    width:30%;
+    height:280px;
+    margin:2px;
+    padding:2px;
+}
+#intrinsicValue .formContent>div input{
+    display:inline-block;
+    width:400px;
+    height:30px;
+    border:2px solid #e4393c;
+    border-radius:5px;
+    font-size:16px;
+    font-family:'Microsoft Yahei', Arial, sans-serif;
+}
+#intrinsicValueBtn{
+    /*取消边框 高度 背景颜色 圆角 阴影 字体：大小 样式 */
+    height:35px;
+    background-color: #11c1f3;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(150,100,150,0.8);
+    /*字体*/
+    font-size: 16px;
+    color:white;
+}
+/* 内在价值输出结果 */
+#outputResult{
+    width:30%;
+    height:290px;
+    margin:2px;
+    padding:2px;
+}
+#outputResult ul{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width:95%;
+    height:280px;
+    padding:5px;
+    margin:5px;
+}
+#outputResult ul li{
+    display:flex;
+    align-items:center;
+    list-style: none;
+    width:90%;
+    height:30px;
+    margin:1px;
+    padding:1px;
+}
+#outputResult ul li a{
+    font-family: 'Microsoft Yahei', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+/* 内在价值计算 注释内容 */
+#contentExplain{
+    /*居中 宽度 高度*/
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    width:95%;
+    height:100px;
+    margin:2px auto;
+    padding:5px;
+    border:1px solid #ddd;
+    box-shadow:0 3px 4px rgba(200,100,20,.8);
+}
+#contentExplain > h1{
+    /*内外边距  字体：大小 样式 颜色 */
+    padding:2px;
+    margin:2px;
+    /*字体*/
+    font-size: 20px;
+    font-family: 'Microsoft Yahei', Arial, sans-serif;
+    text-shadow: 0 2px 2px rgba(100,150,100,.6);
+}
+#contentExplain > div p{
+    /*字体：大小 样式*/
+    font-size: 16px;
+    font-family: 'Microsoft Yahei', Arial, sans-serif;
+}
+
+/*策略分析相关*/
+#strategyArticle{
+    /* 宽度 高度，居中 上边框 内外边距，box-shadow阴影 */
+    display:flex;
+    flex-direction: row;
+    width:95%;
+    height:300px;
+    margin: 15px auto;
+    padding:2px;
+    border-top:2px solid lightgoldenrodyellow;
+    box-shadow: 0 2px 2px rgba(80,120,150,.8);
+}
+
+#strategyArticle .articleContent{
+    /*宽度 高度 边框 内外边距 box-shadow*/
+    width:25%;
+    height:290px;
+    padding:2px;
+    margin:2px;
+    border:1px solid #ddd;
+}
+
+/*数据分析表样式*/
+#main{
+    /*宽度 高度 边框 颜色 外边距 透明度 */
+    display:flex;
+    border:1px solid #ddd;
+    /*弹性布局居中*/
+    justify-content:center;
+    align-items:center;
+    border-radius: 10px;
+    width: 500px;
+    height:500px;
+    margin: 0 50px;
+    opacity: .9;
+    box-shadow:0 2px 4px rgba(0,3,100,.6);
+}
+/*页签左侧效果*/
+#main div.left{
+    /*宽度 高度 占比：20% 内外边距 边框*/
+    width:20%;
+    height:99%;
+    padding:2px;
+    margin:2px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    box-shadow:0 1px 3px rgba(60,20,10,.4);
+    /*内部元素的布局*/
+    display:flex;
+    flex-direction: column;
+}
+/*页签右侧效果*/
+#main div.right{
+    /*宽度 高度 占比：20% 内外边距 边框*/
+    width:80%;
+    height:99%;
+    padding:2px;
+    margin:2px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    box-shadow:0 1px 3px rgba(60,20,10,.4);
+
+}
+/*修改li的样式*/
+#main .tab li{
+    /*取消标识 内外边距*/
+    list-style:none;
+    margin:2px;
+    padding:2px;
+}
+#main .tab li a{
+    color:#080808;
+}
+#main li.active a{
+    color:#28a54c;
+    font-size:1.3em;
+}
+div.right div{
+    display:none;//隐藏会不会占据文档流，也可以使用z-index
+}
+div.right .active{
+    display:block;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,184 @@
+/*交易书籍样式 */
+/*共有样式*/
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family:'Microsoft Yahei',Arial,sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+/*顶部容器样式*/
+#flex-container{
+    /*弹性布局 宽 高 背景颜色 margin*/
+    display: flex;
+    width:100%;
+    height:50px;
+    background-color: #042A59;
+
+}
+/*顶部左侧容器样式*/
+#flex-container .flex-items1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:15%;
+    height:50px;
+}
+#flex-container .flex-items1 p{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height:40px;
+    margin:1px;
+    padding:1px;
+}
+#flex-container .flex-items1 p>img{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    margin:1px;
+    padding:1px;
+
+}
+
+#flex-container .flex-items1 ul{
+    width:50px;
+    height:45px;
+    margin:1px;
+    padding:1px;
+}
+
+#flex-container .flex-items1 ul>li{
+    list-style: none;
+    width:40px;
+    margin:1px;
+    padding: 1px;
+    color:#00ccff;
+}
+
+/*顶部中间容器样式*/
+#flex-container .flex-items2{
+    display:flex;
+    justify-content: space-around;
+    width:70%;
+    height:50px;
+}
+#flex-container .flex-items2 ul{
+    display:flex;
+    justify-content: space-around;
+    width:80%;
+    height:50px;
+    padding:1px;
+    margin:0 auto;
+}
+#flex-container .flex-items2 ul li{
+    display:flex;
+    align-items: center;
+    width:100px;
+    height:46px;
+    list-style: none;
+    margin:2px;
+    padding:2px;
+}
+
+#flex-container .flex-items2 ul li a{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90px;
+    height:42px;
+    margin:1px;
+    padding:1px;
+    text-decoration: none;
+    font-size: 18px;
+    color:#fff;
+}
+#flex-container .flex-items2 ul li a:hover{
+    color:#00ccff;
+}
+/*顶部右侧容器样式*/
+#flex-container .flex-items3{
+    display:flex;
+    width:15%;
+    height:50px;
+    background-color: green;
+}
+#flex-container .flex-items3 ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;/* 垂直水平居中 配合justify-content*/
+    width:100%;
+    height:50px;
+    padding:2px;
+    margin:0 auto;
+}
+#flex-container .flex-items3 ul li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width:50%;
+    height:40px;
+    padding:2px;
+    margin:0 auto;
+}
+#flex-container .flex-items3 ul li a{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2px;
+    margin:0 auto;
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px;
+}
+
+/* 前端相关书籍样式 */
+/* 前端书籍——左边 */
+#frontMain{
+    /*弹性布局 宽度 高度 边框 圆角*/
+    display:flex;
+    flex-direction:column;
+    width:90%;
+    min-height:600px;
+    margin:15px auto;
+    border-top:2px solid #28a54c;
+    border-radius:5px;
+}
+#frontMain .frontContent{
+    /* 弹性布局 宽度 高度 边框 圆角*/
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:95%;
+    height:250px;
+    margin:5px auto;
+    border:1px solid #aaa;
+    border-radius:5px;
+}
+
+#frontMain div.frontContent div.frontImage{
+    /*宽度 高度 边框 圆角 */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:20%;
+    height:240px;
+    border:1px solid #aaa;
+    border-radius:5px;
+    margin:2px 2px 2px 15px;
+}
+#frontMain div.frontContent div.frontImage img{
+    /*宽度 高度*/
+    width:95%;
+    height:230px;
+}
+/* 前端书籍内容——右边 */
+#frontMain .frontContentRight{
+    /*宽度 高度 边框 圆角*/
+    width:75%;
+    height:240px;
+    margin:2px 20px 2px 2px;
+}

@@ -1,0 +1,305 @@
+/*交易书籍样式 */
+/*共有样式*/
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family:'Microsoft Yahei',Arial,sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+/*顶部容器样式*/
+#flex-container{
+    /*弹性布局 宽 高 背景颜色 margin*/
+    display: flex;
+    width:100%;
+    height:50px;
+    background-color: #042A59;
+
+}
+/*顶部左侧容器样式*/
+#flex-container .flex-items1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:15%;
+    height:50px;
+}
+#flex-container .flex-items1 p{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height:40px;
+    margin:1px;
+    padding:1px;
+}
+#flex-container .flex-items1 p>img{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    margin:1px;
+    padding:1px;
+
+}
+
+#flex-container .flex-items1 ul{
+    width:50px;
+    height:45px;
+    margin:1px;
+    padding:1px;
+}
+
+#flex-container .flex-items1 ul>li{
+    list-style: none;
+    width:40px;
+    margin:1px;
+    padding: 1px;
+    color:#00ccff;
+}
+
+/*顶部中间容器样式*/
+#flex-container .flex-items2{
+    display:flex;
+    justify-content: space-around;
+    width:70%;
+    height:50px;
+}
+#flex-container .flex-items2 ul{
+    display:flex;
+    justify-content: space-around;
+    width:80%;
+    height:50px;
+    padding:1px;
+    margin:0 auto;
+}
+#flex-container .flex-items2 ul li{
+    display:flex;
+    align-items: center;
+    width:100px;
+    height:46px;
+    list-style: none;
+    margin:2px;
+    padding:2px;
+}
+
+#flex-container .flex-items2 ul li a{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90px;
+    height:42px;
+    margin:1px;
+    padding:1px;
+    text-decoration: none;
+    font-size: 18px;
+    color:#fff;
+}
+#flex-container .flex-items2 ul li a:hover{
+    color:#00ccff;
+}
+/*顶部右侧容器样式*/
+#flex-container .flex-items3{
+    display:flex;
+    width:15%;
+    height:50px;
+    background-color: green;
+}
+#flex-container .flex-items3 ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;/* 垂直水平居中 配合justify-content*/
+    width:100%;
+    height:50px;
+    padding:2px;
+    margin:0 auto;
+}
+#flex-container .flex-items3 ul li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width:50%;
+    height:40px;
+    padding:2px;
+    margin:0 auto;
+}
+#flex-container .flex-items3 ul li a{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2px;
+    margin:0 auto;
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px;
+}
+
+/* 风险控制器表 */
+#risk_controller{
+    /*上外边距，宽度80% 居中，*/
+    width:80%;
+    margin:15px auto;
+    border-top:5px solid #007aff;
+}
+#riskControl{
+    /*宽度 最小高度，外边距，内边距，边框 边框圆角*/
+    width:90%;
+    min-height:250px;
+    margin:15px auto;
+    padding:5px;
+    border:2px dotted #28a54c;
+    border-radius:5px;
+}
+#riskControl>div>input{
+    /*字体：大小 颜色*/
+
+    font-size:16px;
+    font-family: 'Microsoft Yahei', Arial, sans-serif;
+}
+div#totalBalance{
+    width:90%;
+    height:50px;
+    margin:15px auto;
+    padding:5px;
+}
+
+div#totalBalance:hover{
+    background-color:#28a54c;
+    opacity:0.7;
+}
+#totalBalance label{
+    /*块级，宽度，高度 居中，右外边距 字体：加粗 字体大小 */
+    width:15%;
+    height:25px;
+    margin-right:15px;
+    /*字体*/
+    font-weight: bold;
+    font-size:16px;
+}
+#balance{
+    /*宽度，高度，*/
+    width:80%;
+    height:40px;
+}
+/*总投资*/
+#totalInvestment{
+    width:90%;
+    height:50px;
+    margin:15px auto;
+    padding:5px;
+}
+#totalInvestment label{
+    /*块级，宽度，高度 居中，右外边距 字体：加粗 字体大小 */
+    width:15%;
+    height:25px;
+    margin-right:15px;
+    /*字体*/
+    font-weight: bold;
+    font-size:16px;
+}
+#investment{
+    /*宽度，高度，*/
+    width:80%;
+    height:40px;
+}
+#totalInvestment:hover{
+    background-color:#28a54c;
+    opacity:0.7;
+}
+
+/* 总市值 */
+#totalMarketValue{
+    width:90%;
+    height:50px;
+    margin:15px auto;
+    padding:5px;
+}
+#totalMarketValue label{
+    /*块级，宽度，高度 居中，右外边距 字体：加粗 字体大小 */
+    width:15%;
+    height:25px;
+    margin-right:15px;
+    /*字体*/
+    font-weight: bold;
+    font-size:16px;
+}
+#marketValue{
+    /*宽度，高度，*/
+    width:80%;
+    height:40px;
+}
+#totalMarketValue:hover{
+    background-color:#28a54c;
+    opacity:0.7;
+}
+/* 风险计算按钮 */
+#calculateBtn{
+    /* 块级 边框 圆角 宽度 居中，高度，背景颜色, 阴影 字体：大小 样式 */
+    display:block;
+    border:1px solid rgba(255,120,120,.6);
+    border-radius:5px;
+    width:20%;
+    margin:2px auto;
+    height:35px;
+    background-color: #0a9dc7;
+    opacity: .9;
+    box-shadow:-2px 3px 3px rgba(120,90,80,.6);
+    /*字体*/
+    font-size: 16px;
+    font-family: 'Microsoft Yahei', Arial, sans-serif;
+    font-weight: bold;
+    color:#c9302c;
+}
+
+/* 风险输出表 */
+#outRisk{
+    /*宽度，最小高度，居中 上边框*/
+    width:90%;
+    margin:2px auto;
+    min-height:50px;
+    border-top:2px solid #6b46e5;
+}
+#outRisk table{
+    /*宽度，高度，居中， */
+    width:95%;
+    height:60px;
+    margin:5px auto;
+    border-collapse: collapse;
+}
+#outRisk table thead tr th{
+    /*字体：大小，样式，颜色*/
+    font-size: 17px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:#009689;
+}
+#outRisk table tbody tr td{
+    /*居中，字体：大小,样式*/
+    text-align:center;
+    font-size:20px;
+    font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+}
+
+
+/* 使用说明"样式表" */
+#explainContent{
+    /*宽度，最小高度 上边框*/
+    width:90%;
+    margin:5px auto;
+    min-height:50px;
+    border-top:2px solid #009689;
+}
+#explainContent h1{
+    /*字体：颜色，大小，*/
+    color:#007aff;
+    opacity: 0.9;
+    font-family: 'Microsoft Yahei', Arial, sans-serif;
+}
+#explainContent p{
+    /*字体：大小 样式*/
+    font-size: 20px;
+}
+#explainContent p>strong{
+    color:#c9302c;
+}
+

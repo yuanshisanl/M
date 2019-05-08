@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src *;
+    style-src 'self' http://* 'unsafe-inline'; script-src 'self'
+    http://* 'unsafe-inline' 'unsafe-eval'" />
+    <link rel="stylesheet" href="css/login.css"/>
+    <title>Login</title>
+</head>
+<body>
+
+<div id="inner">
+    <!-- 页面顶部信息 -->
+    <a class="logo">
+        <img src="images/eagle.jpg"/>
+    </a>
+
+    <ul class="officialLogin">
+        <li>
+            <a href="MiniBird.html">官网首页</a>
+        </li>
+
+        <li>
+            <a href="register.html">注册</a>
+        </li>
+    </ul>
+</div>
+
+<!-- 功能：实现登录样式 -->
+<div id="loginMain">
+    <div>
+        <img src="images/bird.jpg"
+             class="loginImg"   />
+    </div>
+
+    <h1>用户登录</h1>
+
+    <form class="form_login">
+        用户名:<input type="text"
+                  name="user_name"
+                  id="user_login"
+                  placeholder="用户名/邮箱/地址"
+                  />
+        <span>搜索</span>
+        <br/>
+        密&nbsp;&nbsp;&nbsp;码:<input type="text"
+                 name="user_password"
+                 id="password_login"
+                 placeholder="请输入用户密码"
+                 />
+        <span>密码必须是数字和字母的组合,且至少8位</span>
+        <br/>
+        <button type="button" id="bt-login">用户登录</button>
+    </form>
+
+</div>
+
+
+<footer>
+    <!-- 登录页面底部样式 -->
+</footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

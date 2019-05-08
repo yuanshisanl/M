@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src *;
+    style-src 'self' http://* 'unsafe-inline'; script-src 'self'
+    http://* 'unsafe-inline' 'unsafe-eval'" />
+    <title>策略分析</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no,
+          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/strategy_analyze.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+</head>
+<body>
+<div id="flex-container">
+    <!-- 左边信息 -->
+    <div class="flex-items1">
+        <p>
+            <img src="images/eagle.jpg"/>
+        </p>
+        <ul>
+            <li>Mini</li>
+            <li>Bird</li>
+        </ul>
+    </div>
+    <!-- 中间信息 -->
+    <div class="flex-items2">
+        <ul>
+            <li>
+                <a href="trader_books.html">交易书籍</a>
+            </li>
+
+            <li>
+                <a href="front_books.html">web前端</a>
+            </li>
+
+            <li>
+                <a href="after_end_books.html">后端书籍</a>
+            </li>
+
+            <li>
+                <a href="strategy_analyze.html">策略分析</a>
+            </li>
+            <li>
+                <a href="riskControl.html">风险控制</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 右边信息 -->
+    <div class="flex-items3">
+        <ul>
+            <li>
+                <a href="login.html">登录</a>
+            </li>
+            <li>
+                <a href="register.html">注册</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<section id="stockCalculate">
+    <!-- 第一块：股票内在价值计算 -->
+    <div id="intrinsicValue">
+        <!-- 1、计算部分 -->
+        <div class="formCalculate">
+            <!-- 1、表单内容 -->
+            <div>
+                <form class="formContent">
+                    <!-- 总资产 -->
+                    <div>
+                        <label for="totalAssets">总资产：</label>
+                        <input type="number" name="totalAssets" id="totalAssets"
+                               placeholder="请输入公司总资产"/>
+                    </div>
+                    <!-- 总负债 -->
+                    <div>
+                        <label for="grossLiability">总负债：</label>
+                        <input type="number" name="grossLiability" id="grossLiability"
+                               placeholder="请输入公司总负债"/>
+                    </div>
+                    <!-- 总股本 -->
+                    <div>
+                        <label for="totalCapital">总股本：</label>
+                        <input type="number" name="totalCapital" id="totalCapital"
+                               placeholder="请输入公司总股本"/>
+                    </div>
+                    <div>
+                        <label for="closePrice">收盘价：</label>
+                        <input type="number" name="closePrice" id="closePrice"
+                               placeholder="请输入当日股票收盘价"/>
+                    </div>
+                </form>
+            </div>
+            <!-- 2、计算内在价值 -->
+            <div class="calculateResult">
+                <button type="button" id="intrinsicValueBtn">计算内在价值</button>
+            </div>
+        </div>
+        <!-- 2、内在价值输出内容 -->
+        <div id="outputResult">
+            <ul>
+                <li>
+                    <a>内在价值：0</a>
+                </li>
+                <li>
+                    <a>溢出比率：0</a>
+                </li>
+                <li>
+                    <a>收盘价：0</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 第二块：资产评估法内容及输出结果说明 -->
+    <div id="contentExplain">
+        <h1>资产评估法：</h1>
+        <div>
+            <p>股票内在价值 = (总资产 - 总负债) / 总股本</p>
+        </div>
+    </div>
+
+    <!-- 第三块：策略分析文章 -->
+
+    <div id="strategyArticle">
+        <!-- 文章1 -->
+        <div class="articleContent">
+
+        </div>
+        <!-- 文章2 -->
+        <div class="articleContent">
+            文章
+        </div>
+        <!-- 文章3 -->
+        <div class="articleContent">
+            文章
+        </div>
+        <!-- 文章3 -->
+        <div class="articleContent">
+            文章
+        </div>
+    </div>
+
+    <!-- 第四部分：数据可视化分析 -->
+    <div id="dataChart">
+        <div id="main">
+            <!-- 左侧部分 -->
+            <div class="left">
+                <ul class="tab">
+                    <li class="active">
+                        <a href="#left1">财新</a>
+                    </li>
+                    <li>
+                        <a href="#left2">非农</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 右侧部分 -->
+            <div class="right">
+                <div id="left1" class="active">财新(PMI)</div>
+                <div id="left2">非农</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 回到顶点 -->
+    <div>
+
+    </div>
+</section>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/strategyAnalyze.js"></script>
+
+
+</body>
+</html>

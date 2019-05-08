@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src *;
+    style-src 'self' http://* 'unsafe-inline'; script-src 'self'
+    http://* 'unsafe-inline' 'unsafe-eval'" />
+    <title>风险控制</title>
+    <link rel="stylesheet" href="css/risk_control.css"/>
+</head>
+<body>
+<!-- 头部内容 -->
+<div id="flex-container">
+    <!-- 左边信息 -->
+    <div class="flex-items1">
+        <p>
+            <img src="images/eagle.jpg"/>
+        </p>
+        <ul>
+            <li>Mini</li>
+            <li>Bird</li>
+        </ul>
+    </div>
+    <!-- 中间信息 -->
+    <div class="flex-items2">
+        <ul>
+            <li>
+                <a href="trader_books.html">交易书籍</a>
+            </li>
+
+            <li>
+                <a href="front_books.html">web前端</a>
+            </li>
+
+            <li>
+                <a href="after_end_books.html">后端书籍</a>
+            </li>
+
+            <li>
+                <a href="strategy_analyze.html">策略分析</a>
+            </li>
+            <li>
+                <a href="riskControl.html">风险控制</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 右边信息 -->
+    <div class="flex-items3">
+        <ul>
+            <li>
+                <a href="login.html">登录</a>
+            </li>
+            <li>
+                <a href="register.html">注册</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- 主体内容 -->
+<section id="risk_controller">
+    <!-- 风险控制器表 -->
+    <form id="riskControl">
+        <!-- 总资产 -->
+        <div id="totalBalance">
+            <label for="balance">总资产：</label>
+            <input type="number" name="balance" id="balance"/>
+        </div>
+        <!-- 总投资 -->
+        <div id="totalInvestment">
+            <label for="investment">总投资：</label>
+            <input type="number" name="investment" id="investment"/>
+        </div>
+
+        <!-- 总市值 -->
+        <div id="totalMarketValue">
+            <label for="MarketValue">总市值：</label>
+            <input type="number" name="marketValue" id="marketValue"/>
+        </div>
+
+        <!-- 计算结果按钮 -->
+        <button type="button" id="calculateBtn">计算风险</button>
+    </form>
+
+
+    <!-- 输出表 -->
+    <div id="outRisk">
+        <table border="2">
+            <!-- 表头 -->
+            <thead>
+                <tr>
+                    <th>总资产</th>
+                    <th>总投资</th>
+                    <th>投资占比</th>
+                    <th>总市值</th>
+                    <th>投资收益率</th>
+                </tr>
+            </thead>
+            <!-- 表主体 -->
+            <tbody >
+                <tr id="riskResult">
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 说明 -->
+    <div id="explainContent">
+        <h1>使用说明：</h1>
+        <p>1：投资占比超过<strong>60%</strong>是危险操作</p>
+        <p>2：投资收益率低于<strong>-20%</strong>是危险操作<strong>(建议清仓)</strong></p>
+    </div>
+
+</section>
+
+
+<!-- JS部分 -->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/riskControl.js"></script>
+
+</body>
+</html>
